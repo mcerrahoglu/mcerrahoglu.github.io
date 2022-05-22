@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+    <title>Site</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/benyaptim.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.5/lib/darkmode-js.min.js"></script>
+  
+
+</head>
+<body  onload="startTime()">
+
+
+  
+
+   
+    <!-- Buton Kısmı -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Filmler</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Anasayfa</a>
+              </li>
+             
+           
+           
+            </ul>
+           
+          </div>
+          
+          <p id="txt" class="renkayar"></p>
+          <p>--</p>
+          <p id="demo" class="renkayar"></p>
+         
+        </div>
+       
+ 
+      </nav>
+
+      <div id="ortala">
+
+      <div id="gizle" class="alert success">
+        <span class="closebtn">&times;</span>  
+        <strong>Başarılı!</strong> Reklamlar Başarıyla Gizlendi.
+      </div>
+    </div>
+
+
+
+  <!-- Buton Kısmı Son -->
+
+  <!-- Orta Div Başlangıç -->
+<div class="container">   
+<div class="row mt-4">
+<div class="col-md-8">
+  
+  
+   
+    <div class="row">
+
+        <div class="col-sm-6">
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img id="myID5" src="image/dr.jpg" class="img-fluid rounded-start">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                   
+                      <h5 class="card-title"><div class="tool">Doktor Strange 2 <span class="tooltiptext">Film 1</span></div> </h5> 
+                     
+                      <p class="card-text">Evrenin kapılarını açıyor ve sınırları her zamankinden daha ileri zorluyor.</p>
+                      <a href="#" class="btn btn-primary flip" >Fragman</a>
+                     
+                      <a href="https://www.youtube.com/watch?v=4m57bIsd9nU&ab_channel=BoxOfficeTürkiye" target="_blank" class="btn btn-primary panel">İzle</a>
+                     <i onclick="likedislike(this)" class="fa fa-thumbs-up"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+
+      
+
+        <div class="col-sm-6">
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img id="myID4" src="image/film2.jpg" class="img-fluid rounded-start" >
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title"><div class="tool">Korku Takvimi <span class="tooltiptext">Film 2</span></div></h5>
+                      <p class="card-text">Kabus ve halüsinasyonlarla gerçekler arasındaki sınırlar zorlanacak.</p>
+                      <a href="#" class="btn btn-primary flip">Fragman</a>
+                      <a href="https://www.youtube.com/watch?v=TFSQrhTG-7k&ab_channel=DrasFilmPictures" target="_blank" class="btn btn-primary panel" >İzle</a>
+                      <i onclick="likedislike(this)" class="fa fa-thumbs-up"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+         </div>
+
+    </div>
+
+
+
+    <div class="row">
+
+        <div class="col-sm-6">
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img id="myID3"  src="image/film3.png" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title"><div class="tool">Kim Demiş Kötüyüz Diye?<span class="tooltiptext">Film 3</span></div></h5>
+                      <p class="card-text">Suçlu hayvanlardan oluşan usta bir haydut çetesinin örnek birer vatandaş olmaya çalışmasını konu ediniyor.</p>
+                      <a href="#" class="btn btn-primary flip">Fragman</a>
+                      <a href="https://www.youtube.com/watch?v=nfjfMBgvreo&ab_channel=BoxOfficeTürkiye" target="_blank" class="btn btn-primary panel" >İzle</a>
+                      <i onclick="likedislike(this)" class="fa fa-thumbs-up"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+
+
+        <div class="col-sm-6">
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img id="myID2" src="image/film4.jpg" class="img-fluid rounded-start" >
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title"><div class="tool">Fantastik Canavarlar 3<span class="tooltiptext">Film 4</span></div></h5>
+                      <p class="card-text">Warner Bros. Pictures’tan “Dumbledore’un Sırları”, J.K. Rowling’in yarattığı Büyücülük Dünyası’ndaki en son macera.</p>
+                      <a href="#" class="btn btn-primary flip">Fragman</a>
+                      <a href="https://www.youtube.com/watch?v=Y9dr2zw-TXQ&ab_channel=WarnerBros.Pictures" target="_blank" class="btn btn-primary panel" >İzle</a>
+                      <i onclick="likedislike(this)" class="fa fa-thumbs-up"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+         </div>
+
+    </div>
+
+
+    <div class="row">
+
+        <div class="col-sm-6">
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img id="myID1" src="image/film5.jpg" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title"><div class="tool">Kirpi Sonic 2<span class="tooltiptext">Film 5</span></div></h5>
+                      <p class="card-text">Yanında daha güçlü bir silahla karşısına çıkan Dr. Robotnik ile yeni mücadelesini anlatıyor. </p>
+                      <a href="#" class="btn btn-primary flip">Fragman</a>
+                      <a href="https://www.youtube.com/watch?v=FRsDnWQtVjk&ab_channel=BoxOfficeTürkiye" target="_blank" class="btn btn-primary panel" >İzle</a>
+                      <i onclick="likedislike(this)" class="fa fa-thumbs-up"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+
+
+        <div class="col-sm-6">
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img id="myID" src="image/film6.png" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title"><div class="tool">Ejderham ve Ben<span class="tooltiptext">Film 6</span></div></h5>
+                      <p class="card-text">Ejderham Ve Ben, genç gümüş ejderha Ateş Drake ile Ben adlı bir çocuğundostluğunu konu alıyor.</p>
+                      <a href="#" class="btn btn-primary flip">Fragman</a>
+                      <a href="https://www.youtube.com/watch?v=HM6zk8LjKCA&list=PLlxxIm__PkciupB1nMpksoIs081I1OpET&index=3&ab_channel=MuratIŞIK" target="_blank" class="btn btn-primary panel">İzle</a>
+                      <i onclick="likedislike(this)" class="fa fa-thumbs-up"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+         </div>
+
+    </div>
+
+    <div id="hizala">
+
+    <button onclick="display()">Parlaklık Kıs</button>
+      
+    <button onclick="displayout()">Parlaklık Aç</button>
+
+    <div id="yap">
+      <button onclick="on()">Ekranı Karart</button>
+    </div>
+
+
+    <div id="overlay" onclick="off()">
+      <div id="text">Ekran Karatma Aktif Çıkmak İçin Ekrana Tıklayınız</div>
+    </div>
+    
+  </div>
+
+</div>
+
+
+ <!-- Orta Div Son -->
+
+ <!-- Yan Div Başlangıç -->
+<div class="col-md-4">
+<div class="position-sticky" style="top:50px ;">
+<div class="card">
+    <div class="card-header " style="background-color:black"><span id="reklam">Reklam Alanı -- </span> <button id="hide" class="button" onclick="mesajbas(), move(), acsana()">Reklam Gizle</button>
+        <button id="show" class="button">Göster</button> </div>
+    <div class="card-body">
+        <iframe
+        width="380"
+        height="315"
+        src="https://www.youtube.com/embed/9YYxvVawZdI"
+        frameborder="0"
+        allow="autoplay;
+        encrypted-media"
+        allowfullscreen>
+      </iframe>
+    </div>
+    <div class="card-body">
+        <iframe
+        width="380"
+        height="315"
+        src="https://www.youtube.com/embed/0mr0nUpdyWU"
+        frameborder="0"
+        allow="autoplay;
+        encrypted-media"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+
+    <div id="myProgress">
+      <div id="myBar">0%</div>
+    </div>
+
+</div>
+</div>
+
+
+
+
+
+</div>
+ <!-- Yan Div Son -->
+
+
+
+
+</div>
+
+
+<script src="js/yeni.js"></script>
+
+
+
+</body>
+</html>
